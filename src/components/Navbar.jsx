@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { assets } from '../assetsMap'
+import ImageX from './ImageX'
 
 const navLinkClass = ({ isActive }) =>
   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -12,7 +13,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={assets.logoHeader} alt="Drone Exterior Solutions logo" className="h-9 w-auto" loading="lazy" />
+            <ImageX src={assets.logoHeader} alt="Drone Exterior Solutions logo" className="h-9 w-auto" />
             <span className="sr-only">Drone Exterior Solutions Ltd</span>
           </Link>
 

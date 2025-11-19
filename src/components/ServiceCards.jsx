@@ -1,4 +1,5 @@
 import { assets } from '../assetsMap'
+import ImageX from './ImageX'
 
 const services = [
   {
@@ -32,7 +33,7 @@ export default function ServiceCards() {
           {services.map((s) => (
             <div key={s.title} className="group bg-[#30363D] rounded-xl overflow-hidden ring-1 ring-white/10 hover:ring-[#1F6FEB]/30 transition-shadow">
               <div className="aspect-video bg-black/20">
-                <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <ImageX src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
               </div>
               <div className="p-5">
                 <h3 className="text-white font-semibold text-lg">{s.title}</h3>

@@ -1,4 +1,5 @@
 import { assets } from '../assetsMap'
+import ImageX from './ImageX'
 
 const items = [
   { title: 'Pressure washing', desc: 'Drives, patios, car parks, communal areas', img: assets.traditional.pressure },
@@ -17,7 +18,7 @@ export default function TraditionalGrid() {
           {items.map((i) => (
             <div key={i.title} className="bg-[#30363D] rounded-xl overflow-hidden ring-1 ring-white/10">
               <div className="aspect-video">
-                <img src={i.img} alt={i.title} className="w-full h-full object-cover" loading="lazy" />
+                <ImageX src={i.img} alt={i.title} className="w-full h-full object-cover" loading="lazy" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
               </div>
               <div className="p-5">
                 <h3 className="text-white font-semibold">{i.title}</h3>
