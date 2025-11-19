@@ -98,13 +98,15 @@ export default function Contact(){
 
           <label className="flex items-start gap-3 text-sm text-gray-300">
             <input name="consent" type="checkbox" required className="mt-1" />
-            <span>I agree for Drone Exterior Solutions Ltd to store my details in order to respond to my enquiry. Full details are in the Privacy Policy.</span>
+            <span>“I consent to Drone Exterior Solutions Ltd storing and using my personal information to process my enquiry. I understand my data will not be shared with third parties, except where legally required, and will be handled in accordance with the Privacy Policy.”</span>
           </label>
 
           <button className="mt-2 inline-flex justify-center px-5 py-3 rounded bg-[#1F6FEB] hover:bg-[#1F6FEB]/90">Send</button>
 
           {status && <p className="text-sm text-gray-300">{status}</p>}
         </form>
+
+        <p className="text-xs text-gray-400 mt-4">For full details on how we protect your information, please see our Privacy Policy.</p>
       </section>
     </div>
   )
