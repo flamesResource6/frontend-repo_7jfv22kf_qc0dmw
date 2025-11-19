@@ -2,11 +2,10 @@ import { assets } from '../assetsMap'
 import ImageX from './ImageX'
 
 const items = [
-  { title: 'Pressure washing', desc: 'Drives, patios, car parks, communal areas', img: assets.traditional.pressure },
-  { title: 'Soft washing', desc: 'Render, cladding, walls, stonework', img: assets.traditional.softwash },
-  { title: 'Roof moss removal + biocide', desc: 'Safe moss removal with long-lasting biocide treatment', img: assets.traditional.roofMoss },
-  { title: 'Gutter cleaning & washing', desc: 'Clear, wash and restore gutter performance', img: assets.traditional.gutter },
-  { title: 'Ground-level window cleaning', desc: 'Optional add-on for site finish', img: assets.traditional.windows },
+  { title: 'Pressure Washing', desc: 'Drives, patios, car parks, communal areas', img: assets.traditional.pressure },
+  { title: 'Soft Washing', desc: 'Render, cladding, walls, stonework', img: assets.traditional.softwash },
+  { title: 'Roof Moss Removal / Roof Cleaning', desc: 'Safe moss removal with long-lasting biocide treatment', img: assets.traditional.roofMoss },
+  { title: 'Gutter Cleaning & Washing', desc: 'Clear, wash and restore gutter performance', img: assets.traditional.gutter },
 ]
 
 export default function TraditionalGrid() {
