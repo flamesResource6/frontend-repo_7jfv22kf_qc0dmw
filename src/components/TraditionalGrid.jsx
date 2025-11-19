@@ -1,9 +1,11 @@
+import { assets } from '../assetsMap'
+
 const items = [
-  { title: 'Pressure washing', desc: 'Drives, patios, car parks, communal areas', img: '/services/pressure.jpg' },
-  { title: 'Soft washing', desc: 'Render, cladding, walls, stonework', img: '/services/softwash.jpg' },
-  { title: 'Roof moss removal + biocide', desc: 'Safe moss removal with long-lasting biocide treatment', img: '/services/roof-moss.jpg' },
-  { title: 'Gutter cleaning & washing', desc: 'Clear, wash and restore gutter performance', img: '/services/gutter.jpg' },
-  { title: 'Ground-level window cleaning', desc: 'Optional add-on for site finish', img: '/services/windows.jpg' },
+  { title: 'Pressure washing', desc: 'Drives, patios, car parks, communal areas', img: assets.traditional.pressure },
+  { title: 'Soft washing', desc: 'Render, cladding, walls, stonework', img: assets.traditional.softwash },
+  { title: 'Roof moss removal + biocide', desc: 'Safe moss removal with long-lasting biocide treatment', img: assets.traditional.roofMoss },
+  { title: 'Gutter cleaning & washing', desc: 'Clear, wash and restore gutter performance', img: assets.traditional.gutter },
+  { title: 'Ground-level window cleaning', desc: 'Optional add-on for site finish', img: assets.traditional.windows },
 ]
 
 export default function TraditionalGrid() {
@@ -15,7 +17,7 @@ export default function TraditionalGrid() {
           {items.map((i) => (
             <div key={i.title} className="bg-[#30363D] rounded-xl overflow-hidden ring-1 ring-white/10">
               <div className="aspect-video">
-                <img src={i.img} alt={i.title} className="w-full h-full object-cover" />
+                <img src={i.img} alt={i.title} className="w-full h-full object-cover" loading="lazy" />
               </div>
               <div className="p-5">
                 <h3 className="text-white font-semibold">{i.title}</h3>

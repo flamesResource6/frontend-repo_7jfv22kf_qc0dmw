@@ -1,23 +1,25 @@
+import { assets } from '../assetsMap'
+
 const services = [
   {
     title: 'Drone Building Washing',
     desc: 'High-pressure or soft washing via drone for safe, efficient façade cleaning.',
-    img: '/services/drone-building.jpg',
+    img: assets.drone.building,
   },
   {
     title: 'Drone Window & Façade Cleaning',
     desc: 'Reach high-rise glazing and cladding without scaffolding or MEWPs.',
-    img: '/services/drone-facade.jpg',
+    img: assets.drone.facade,
   },
   {
     title: 'Drone Roof Cleaning',
     desc: 'Remove moss, grime and pollutants from roof surfaces using precision drones.',
-    img: '/services/drone-roof.jpg',
+    img: assets.drone.roof,
   },
   {
     title: 'Drone Solar Cleaning',
     desc: 'Non-abrasive cleaning to maximise solar yield across rooftop and ground arrays.',
-    img: '/services/drone-solar.jpg',
+    img: assets.drone.solar,
   },
 ]
 
@@ -30,7 +32,7 @@ export default function ServiceCards() {
           {services.map((s) => (
             <div key={s.title} className="group bg-[#30363D] rounded-xl overflow-hidden ring-1 ring-white/10 hover:ring-[#1F6FEB]/30 transition-shadow">
               <div className="aspect-video bg-black/20">
-                <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={s.img} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
               </div>
               <div className="p-5">
                 <h3 className="text-white font-semibold text-lg">{s.title}</h3>

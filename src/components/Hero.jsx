@@ -1,9 +1,13 @@
+import { assets } from '../assetsMap'
+
 export default function Hero({ onPrimaryClick, onSecondaryClick, bgGif }) {
+  const hero = assets.heroImage
+  const bg = assets.heroBgGif
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[#2F343A]"></div>
-      {bgGif && (
-        <img src={bgGif} alt="Background animation" className="absolute inset-0 w-full h-full object-cover opacity-20" />
+      {bg && (
+        <img src={bg} alt="Background animation" className="absolute inset-0 w-full h-full object-cover opacity-15" loading="lazy" />
       )}
       <div className="absolute -right-20 -top-20 w-[600px] h-[600px] rounded-full bg-[#1F6FEB]/20 blur-3xl"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
@@ -23,7 +27,7 @@ export default function Hero({ onPrimaryClick, onSecondaryClick, bgGif }) {
           <div className="relative">
             <div className="absolute -z-10 -inset-10 bg-gradient-to-tr from-[#1F6FEB]/30 to-transparent rounded-3xl blur-2xl"></div>
             <div className="aspect-[4/3] rounded-2xl overflow-hidden ring-1 ring-white/10 bg-[#30363D]">
-              <img src="/drone-hero.jpg" alt="Drone cleaning" className="w-full h-full object-cover"/>
+              <img src={hero} alt="Drone cleaning" className="w-full h-full object-cover" loading="eager" />
             </div>
           </div>
         </div>

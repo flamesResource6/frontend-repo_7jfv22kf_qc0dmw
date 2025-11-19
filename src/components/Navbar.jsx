@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import { assets } from '../assetsMap'
 
 const navLinkClass = ({ isActive }) =>
   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -11,11 +12,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded bg-[#1F6FEB] grid place-items-center text-white font-bold shadow-[0_0_30px_rgba(31,111,235,0.45)]">DE</div>
-            <div className="text-white font-semibold leading-tight">
-              <div>Drone Exterior</div>
-              <div className="text-xs text-gray-300 -mt-0.5">Solutions Ltd</div>
-            </div>
+            <img src={assets.logoHeader} alt="Drone Exterior Solutions logo" className="h-9 w-auto" loading="lazy" />
+            <span className="sr-only">Drone Exterior Solutions Ltd</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
