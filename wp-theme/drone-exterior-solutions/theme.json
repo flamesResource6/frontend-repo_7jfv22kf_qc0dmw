@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "custom": {
+      "palette": {
+        "gunmetal": "#2F343A",
+        "charcoal": "#30363D",
+        "electric": "#1F6FEB",
+        "white": "#ffffff",
+        "light": "#F3F4F5"
+      }
+    },
+    "color": {
+      "palette": [
+        { "slug": "gunmetal", "name": "Gun-metal grey", "color": "#2F343A" },
+        { "slug": "charcoal", "name": "Dark charcoal", "color": "#30363D" },
+        { "slug": "electric", "name": "Electric blue", "color": "#1F6FEB" },
+        { "slug": "white", "name": "White", "color": "#ffffff" },
+        { "slug": "light", "name": "Light grey", "color": "#F3F4F5" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {"fontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\"", "slug": "inter", "name": "Inter"}
+      ],
+      "lineHeight": true
+    },
+    "layout": {"contentSize": "760px", "wideSize": "1180px"},
+    "border": {"radius": true}
+  },
+  "styles": {
+    "color": {"background": "#2F343A", "text": "#ffffff"},
+    "typography": {"fontFamily": "var(--wp--preset--font-family--inter)"},
+    "elements": {
+      "button": {
+        "color": {"text": "#ffffff", "background": "#1F6FEB"},
+        "typography": {"fontWeight": "600"},
+        "border": {"radius": "8px"}
+      }
+    }
+  },
+  "customTemplates": [
+    {"name": "front-page", "title": "Front Page"}
+  ],
+  "templateParts": [
+    {"name": "header", "title": "Header", "area": "header"},
+    {"name": "footer", "title": "Footer", "area": "footer"}
+  ]
+}

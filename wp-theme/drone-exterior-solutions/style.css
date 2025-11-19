@@ -1,0 +1,26 @@
+/*
+Theme Name: Drone Exterior Solutions
+Theme URI: https://droneexteriorsolutions.co.uk
+Author: Drone Exterior Solutions Ltd
+Author URI: https://droneexteriorsolutions.co.uk
+Description: Block Editor theme for Drone Exterior Solutions Ltd. Modern, performance-focused, with reusable patterns for Hero, Services Grid, Sectors, Why Choose Us, FAQ, and Contact.
+Requires at least: 6.3
+Tested up to: 6.6
+Requires PHP: 7.4
+Version: 1.0.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: drone-exterior-solutions
+Tags: full-site-editing, block-patterns, one-column, wide-blocks, accessibility-ready
+*/
+
+/* Global tweaks (most styles live in theme.json presets) */
+:where(.wp-site-blocks){
+  --color-gunmetal:#2F343A;
+  --color-charcoal:#30363D;
+  --color-electric:#1F6FEB;
+  --color-white:#ffffff;
+  --color-light:#F3F4F5;
+}
+
+body{background:var(--color-gunmetal);color:var(--color-white);}
