@@ -10,8 +10,8 @@ export const assets = {
 
   // Hero
   heroImage: gdrive('122cK5L3jeb7IvLi8jS0DaK3OlMj_Z7HH'),
-  // Optional animated background (keep if you have one available)
-  heroBgGif: null,
+  // Optional animated background
+  heroBgGif: gdrive('1rOgoxSSi7QPnUHElJuGtfCwC5WEx5DZb'),
 
   // Drone services (4)
   drone: {
@@ -28,6 +28,12 @@ export const assets = {
     roofMoss: gdrive('17bwb9RHTkg18uS3gGlnMHE2tZfSGIA1s'),
     gutter: gdrive('1X4yda5v8EkDwKhJIOfaQj9uBH0sI0itO'),
   },
+
+  // Additional visuals
+  aboutImage: gdrive('1K8CBtD8kfrhK0iJUi0hX5KqY4YsaFGgL'),
+  sectorCommercial: gdrive('1XZZJvUGfnckv3i-XMIw1-S7SSb0hc6WX'),
+  sectorIndustrial: gdrive('131k5Nc5D6o9CUTF8VvY8B8DqirCdot3u'),
+  supportImage: gdrive('1l3qwZCiq6tbpQ7VzJlDPz0cO43FUQcwl'),
 
   // Contact page background
   contactBg: gdrive('1oDFF_ahmy87P1QV60IcF4XdhGbLMZa5s'),

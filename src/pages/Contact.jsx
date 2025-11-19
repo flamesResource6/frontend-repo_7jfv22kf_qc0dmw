@@ -12,8 +12,6 @@ export default function Contact(){
     const data = new FormData(form)
 
     try {
-      // In production we would submit to WP plugin endpoint or email service.
-      // For the prototype we simulate success.
       await new Promise(r => setTimeout(r, 600))
       setStatus('Your message has been sent. We will get back to you shortly.')
       form.reset()
@@ -84,12 +82,12 @@ export default function Contact(){
                 <option>Soft washing</option>
                 <option>Roof moss removal</option>
                 <option>Gutter cleaning & washing</option>
-                <option>Ground-level window cleaning</option>
               </select>
             </div>
             <div>
               <label className="block text-sm text-gray-300 mb-1">Upload photos</label>
               <input name="photos" type="file" multiple className="w-full px-3 py-2 rounded bg-[#2F343A] border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#1F6FEB]" />
+              <p className="text-xs text-gray-400 mt-1">JPEG/PNG/WebP. Max 10MB each. You can also email files after submitting.</p>
             </div>
           </div>
 
@@ -99,7 +97,7 @@ export default function Contact(){
           </div>
 
           <label className="flex items-start gap-3 text-sm text-gray-300">
-            <input type="checkbox" required className="mt-1" />
+            <input name="consent" type="checkbox" required className="mt-1" />
             <span>I agree for Drone Exterior Solutions Ltd to store my details in order to respond to my enquiry. Full details are in the Privacy Policy.</span>
           </label>
 

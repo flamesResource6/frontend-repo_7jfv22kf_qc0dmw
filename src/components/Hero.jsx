@@ -8,7 +8,7 @@ export default function Hero({ onPrimaryClick, onSecondaryClick }) {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[#2F343A]"></div>
       {bg && (
-        <ImageX src={bg} alt="Background animation" className="absolute inset-0 w-full h-full object-cover opacity-15" loading="lazy" />
+        <ImageX src={bg} alt="Background animation" className="absolute inset-0 w-full h-full object-cover opacity-20 blur-[1px]" loading="lazy" />
       )}
       <div className="absolute -right-20 -top-20 w-[600px] h-[600px] rounded-full bg-[#1F6FEB]/20 blur-3xl"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
